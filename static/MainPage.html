@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Brian Huffer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; 
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; 
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; 
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; 
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar Top Left -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="MainPage.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Personal.html">Projects</a></li>
+        <li><a href="Traveling.html">Traveling</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="http://0.0.0.0:8080/">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About me =] -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Who Am I?</h3> 
+  <p>Hello, Welcome to my website, I'm Brian Huffer and your welcome to navigate thoughout my Website!</p>
+  <p>Enjoy!</p>
+
+</div>
+
+<!-- Navbar Year -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Portfolio</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Projects</p>
+      <img src="https://www.sketchappsources.com/resources/source-image/iphoneiphone.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Traveling</p>
+      <img src="https://www.sketchappsources.com/resources/source-image/office_bag.png" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>About Me</p>
+      <img src="http://www.michaelbuble.co.nz/wp-content/uploads/2016/02/addressbook.png" class="img-responsive margin" style="width:100% height:110%" alt="Image">
+    </div>
+  </div>
+</div>
+
+</body>
+  <body onLoad="thoughts_authors()"> 
+  <script>
+    function thoughts_authors()
+    {
+
+    var authors=new Array()
+    authors[0] = "Charles Schulz";
+    authors[1] = "Jack Wagner";
+    authors[2] = "Mark Twain";
+    authors[3] = "Oscar Wilde";
+    authors[4] = "David Letterman";
+    authors[5] = "Lily Tomlin";
+
+    var thoughts=new Array()
+    thoughts[0] = "Good Day Is Today";
+    thoughts[1] = "Style Is What You Choose";
+    thoughts[2] = "Be The Best Version Of You.";
+    thoughts[3] = "Truth Along Triumphs.";
+    thoughts[4] = "How can Life Be Devastating When YOU Are Present in It.";
+    thoughts[5] = "Believe In What You Say";
+
+    index = Math.floor(Math.random() * thoughts.length);
+
+    alert(thoughts[index]+ "-" + authors[index]);
+
+    }
+  </script>
+</html>
+
